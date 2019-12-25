@@ -184,11 +184,8 @@ RSpec.describe GramsController, type: :controller do
       post :create, params: { gram: { message: ''} }
       expect(response).to have_http_status(:unprocessable_entity)
       expect(gram_count).to eq Gram.count
-    end
-
-  end
-
-  #
-  # Commented added by Steve Tice on Dec 23, 2019.
-  #
+      end
+   end
+  
 end
+ 
